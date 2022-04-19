@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <h1 id="h1">Registration Form</h1>
+        Name <input type="text"value="" id="name"/><br>
+        <br>
+        Email <input type="Email" value=""id="Email"/><br>
+        <br>
+        Phone Number <input type="Number" value="" id="Number"/><br>
+        <br>
+        Gender
+        <input type="radio"name="gender" value="male" id="r1">male
+        <input type="radio"name="gender" value="female" id="r1">female
+        
+        <br>
+        <br>
+        <button id="Submitbutton"onclick=submit()>Submit</button>
+        <script>
+            function Submit(){
+                let Name,Email,PhoneNumber,Gender;
+            Name=document.getElementById("name").value;
+            console.log(Name);
+            //Email=document.getElementById("Email").value;
+
+            //PhoneNumber=document.getElementById("Number").value;
+            //console.log(Name,Email,PhoneNumber);
+            //const myarr=[];
+            //myarr.push({name:Name,email:Email,phoneNumber:PhoneNumber});
+            
+            //console.log(myarr);
+           
+          
+            }
+             // Gender=document.getElementById("r1").value;
+            
+////let user_records=new Array();
+//user_records=JSON.parse(localStorage.getItem("user"))?JSON.parse(localStorage.getItem("user")):[];
+//user_records.push({
+//"name":name,
+//"Email":Email,
+//"PhoneNumber":PhoneNumber,
+//"Gender":Gender
+///})
+//localStorage.setItem("user",JSON.stringify(user_records));
+
+        
+            </script>
+        </form>
+    </body>
+</html>
