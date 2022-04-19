@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        
+        async function harry(){
+            console.log("inside harry Function");
+        const responce =await fetch('https://api.github.com/users');
+        
+        console.log('before responce');
+        const users = await responce.json();
+        console.log('user resolved');
+        return users;
+
+        }
+        console.log("before Calling Harry");
+        let a=harry();
+        console.log("after Calling harry");
+        console.log(a);
+        a.then(data => console.log(data))
+        console.log("Last line of this js file");
+        
+        
+      
+     // Adding body or contents to send
+     
+    </script>
+</html>
